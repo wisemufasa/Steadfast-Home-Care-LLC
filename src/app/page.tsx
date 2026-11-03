@@ -47,17 +47,17 @@ const testimonials = [
   {
     quote:
       "Finding someone we could trust to help care for our loved one was incredibly important to our family. Having compassionate, respectful assistance with everyday needs makes such a difference. Knowing that their comfort and dignity are being prioritized gives our family greater peace of mind.",
-    author: "Name, relationship",
+    author: "-Valued Patient",
   },
   {
     quote:
       "Sometimes, it's the little things that make the biggest difference. Having someone to talk with, share activities, and help with everyday routines brings so much comfort. It's reassuring to know that companionship and genuine human connection are part of the care being provided.",
-    author: "Name, relationship",
+    author: "Valued Patient",
   },
   {
     quote:
       "Being a caregiver for someone you love can be rewarding, but it can also be overwhelming. Having dependable support gives our family the opportunity to take a breath, handle other responsibilities, and know that our loved one is receiving attentive care. We're grateful for the difference that this kind of support can make.",
-    author: "Name, relationship",
+    author: "Valued Patient",
   },
 ];
 
