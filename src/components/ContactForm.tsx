@@ -165,7 +165,7 @@ export default function ContactForm() {
         />
       </label>
 
-      {/* Spam protection */}
+      {/* Spam protection
       <div className="trap" aria-hidden="true">
         <label htmlFor="website">
           Leave this field empty
@@ -177,7 +177,7 @@ export default function ContactForm() {
             autoComplete="off"
           />
         </label>
-      </div>
+      </div> */}
 
       <p className="fine">
         Please do not include medical records, diagnoses, medication

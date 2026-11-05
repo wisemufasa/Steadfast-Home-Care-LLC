@@ -38,7 +38,19 @@ export async function POST(request: Request) {
       body: JSON.stringify({ from, to: [to], subject: "New care inquiry — Steadfast Home Care", text: body, reply_to: fields.email }),
       cache: "no-store",
     });
-    if (!response.ok) { console.error("Email provider rejected a contact submission:", response.status); return NextResponse.json({ error: "Could not send your request. Please call or email us." }, { status: 502 }); }
+    if (!response.ok) {
+      const details = await response.text();
+
+      console.error("Resend error:", {
+        status: response.status,
+        details,
+      });
+
+      return NextResponse.json(
+        { error: "Could not send your request. Please call or email us." },
+        { status: 502 }
+      );
+    }
     return NextResponse.json({ ok: true });
   } catch {
     console.error("Email provider could not be reached.");

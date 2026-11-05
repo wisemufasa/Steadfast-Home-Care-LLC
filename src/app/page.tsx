@@ -1,4 +1,4 @@
-import ContactForm from "components/ContactForm";
+import ContactForm from "@/components/ContactForm";
 
 const services = [
   {
@@ -73,7 +73,11 @@ export default function HomePage() {
 
       <header className="top">
         <div className="wrap header-inner">
-          <a className="logo" href="#top">Steadfast Home Care LLC</a>
+          <img
+            className="header-logo"
+            src="/logo.png"
+            alt="Steadfast Home Care Logo"
+          />            <a className="logo" href="#top">Steadfast Home Care LLC</a>
           <nav aria-label="Main navigation">
             <a href="#top">Home</a>
             <a href="#services">Services</a>
@@ -88,7 +92,7 @@ export default function HomePage() {
       <main id="top">
         <section className="watermark-section">
           <video className="watermark-video" autoPlay muted loop playsInline aria-hidden="true">
-            <source src="/Graphics/videocare.mp4" type="video/mp4" />
+            <source src="/videocare.mp4" type="video/mp4" />
           </video>
           <div className="watermark-overlay" />
           <div className="wrap section-content">
@@ -167,7 +171,7 @@ export default function HomePage() {
               ))}
             </div>
             <div className="brochure">
-              <img src="/Graphics/Brochure.png" alt="Steadfast Home Care brochure" />
+              <img src="/brochure.png" alt="Steadfast Home Care brochure" />
             </div>
           </div>
         </section>
@@ -192,7 +196,7 @@ export default function HomePage() {
             <p>Contact our team to talk through what kind of help would make life easier at home.</p>
             <a className="btn brand" href="mailto:hesangbedo@steadfasthomecares.com">Contact our care team</a>
             <div className="office-image">
-              <img src="/Graphics/office.png" alt="Steadfast Home Care office" />
+              <img src="/office.png" alt="Steadfast Home Care office" />
             </div>
           </div>
         </section>
